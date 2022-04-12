@@ -1,0 +1,22 @@
+<p>estimation-cout works!</p>
+<form #form="ngForm">
+
+  <label for="">Position estime</label>
+  <select name="posSelect" id="" ngModel #pos="ngModel" required>
+    <option value=""></option>
+    <option value="vide">Vide</option>
+    <option value="haut">Haut</option>
+    <option value="bas">Bas</option>
+  </select>
+  <br>
+  <div *ngIf="pos.invalid">field required</div>
+  <br>
+  <label for="">Nombre de cractéres</label>
+  <input type="number" name="nbr" value="" ngModel #nbr="ngModel" required>
+  <input type="submit" value="Estimer" (click)="onSubmit(form.value)">
+  <br>
+  <div *ngIf="nbr.invalid">field required</div>
+  <div *ngIf="nbr.value > 60">le nombre de caractere ne doit pas passe</div>
+  <br>
+  <div *ngIf="form.submitted">Le cout de votre artice est {{cout}}DT</div>
+</form>

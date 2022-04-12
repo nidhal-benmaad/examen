@@ -1,0 +1,10 @@
+<p>list-annonces works!</p>
+
+<div *ngFor="let item of list">
+  <div *ngIf="item.etat != 'annulé'" [ngStyle]="{'background-color': getColor(item)}">
+    {{item.title}}
+    {{item.description}}
+    {{item.position}}
+    {{item.etat}}
+  </div>
+</div>

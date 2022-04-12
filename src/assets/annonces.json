@@ -1,0 +1,19 @@
+[{
+    "titre": "Annonce 1",
+    "description": "Soirées d'Entreprise ....",
+    "position": "haut",
+    "etat": "confirmé"
+  },
+  {
+    "titre": "Annonce 2",
+    "description": "Séminaires d'Entreprise ....",
+    "position": "bas",
+    "etat": "annulé"
+  },
+  {
+    "titre": "Annonce 3",
+    "description": "Lancement de Produits ....",
+    "position": "bas",
+    "etat": "en attente"
+  }
+]

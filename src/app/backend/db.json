@@ -1,0 +1,29 @@
+{
+  "annonces": [{
+      "titre": "Annonce 1",
+      "description": "Soirées d'Entreprise ....",
+      "position": "haut",
+      "etat": "confirmé"
+    },
+    {
+      "titre": "Annonce 2",
+      "description": "Séminaires d'Entreprise ....",
+      "position": "bas",
+      "etat": "annulé"
+    },
+    {
+      "titre": "Annonce 3",
+      "description": "Lancement de Produits ....",
+      "position": "bas",
+      "etat": "en attente"
+    }
+  ],
+  "comments": [{
+    "id": 1,
+    "body": "some comment",
+    "postId": 1
+  }],
+  "profile": {
+    "name": "typicode"
+  }
+}

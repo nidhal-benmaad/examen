@@ -1,0 +1,13 @@
+<p>login works!</p>
+
+<form #form="ngForm">
+  <label for="">Username</label>
+  <input type="text" name="username" ngModel>
+  <br>
+  <label for="">Password</label>
+  <input type="password" name="password" ngModel>
+  <br>
+  <input type="submit" value="Login" (click)="login(form.value)">
+  <br>
+  <div *ngIf="form.submitted" style="color: red;">{{msg}}</div>
+</form>
